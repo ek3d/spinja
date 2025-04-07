@@ -1,0 +1,15 @@
+import pygame
+
+SCREEN_WIDTH = 320
+SCREEN_HEIGHT = 180
+
+SCREEN_MIDDLE = pygame.Vector2(SCREEN_WIDTH / 2, SCREEN_HEIGHT / 2)
+SCREEN_TOP_LEFT = pygame.Vector2(0, 0)
+SCREEN_TOP_RIGHT = pygame.Vector2(SCREEN_WIDTH, 0)
+SCREEN_BOTTOM_RIGHT = pygame.Vector2(SCREEN_WIDTH, SCREEN_HEIGHT)
+SCREEN_BOTTOM_LEFT = pygame.Vector2(0, SCREEN_HEIGHT)
+
+VSYNC = 1
+FPS = 60
+
+screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT), pygame.SCALED, vsync=VSYNC)
