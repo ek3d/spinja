@@ -1,6 +1,10 @@
 # Spinja
 Spinja is an endless wave based game where you stop ninjas from reaching your portal!
 
+## Controls:
+- A and S to move left and right
+- W or Space to jump
+
 ## There are two versions:
 - 48 Hour Edition
 - 1 Week Edition
