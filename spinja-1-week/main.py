@@ -2,8 +2,12 @@
 from settings import *
 from scene import SceneManager
 
+import asyncio
 import pygame
 import sys
+import platform
+if sys.platform == "emscripten":
+    platform.window.canvas.style.imageRendering = "pixelated"
 pygame.init()
 
 
@@ -14,7 +18,7 @@ scene_manager = SceneManager()
 
 
 # Main loop
-def main():
+async def main():
     can_update = True
     transition_surface = pygame.Surface((SCREEN_WIDTH, SCREEN_HEIGHT))
     transition_surface.fill((0, 0, 0))
@@ -49,5 +53,8 @@ def main():
             screen.blit(transition_surface, transition_position)
         
         pygame.display.flip()
+        await asyncio.sleep(0)
 
-main()
+
+if __name__ == "__main__":
+    asyncio.run(main())
