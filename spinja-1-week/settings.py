@@ -14,7 +14,7 @@ SCREEN_BOTTOM_LEFT = pygame.Vector2(0, SCREEN_HEIGHT)
 VSYNC = 1
 FPS = 60
 
-screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT), pygame.SCALED, vsync=VSYNC)
+screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 
 CYBORG_NINJA = pygame.mixer.Sound('assets/music/cyborg_ninja.ogg')
 VOXEL_REVOLUTION = pygame.mixer.Sound('assets/music/voxel_revolution.ogg')
