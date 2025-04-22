@@ -13,7 +13,7 @@ class GameOver:
     # Called every frame
     def update(self, events, dt, scene_manager):
         screen.fill((10, 10, 10))
-        screen.blit(self.background)
+        screen.blit(self.background, (0, 0))
         
         for event in events:
             if event.type == pygame.MOUSEBUTTONDOWN:
